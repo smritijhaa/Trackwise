@@ -15,14 +15,16 @@ Requirements
 
 Clone or download the repository:
 git clone https://github.com/smritijhaa/Trackwise.git
+
 Import the project into an IDE (like IntelliJ IDEA, Eclipse, or NetBeans) that supports JavaFX.
+
 Add JavaFX library: If you don't have JavaFX installed, you'll need to configure it. Refer to the JavaFX installation guide to set it up in your IDE.
+
 Compile and Run: After the setup, run the application through your IDE, or if you prefer the command line, compile and run it using the following commands:
+- javac -d out --module-path /path/to/javafx-sdk/lib --add-modules javafx.controls,javafx.fxml src/application/*.java
+- java --module-path /path/to/javafx-sdk/lib --add-modules javafx.controls,javafx.fxm
 
-javac -d out --module-path /path/to/javafx-sdk/lib --add-modules javafx.controls,javafx.fxml src/application/*.java
-java --module-path /path/to/javafx-sdk/lib --add-modules javafx.controls,javafx.fxm
-
-  How to Use
+How to Use
 1. Welcome Page
 The Welcome Page serves as the main entry point. Users can choose which action to perform from the options provided.
 2. Add New Category
@@ -42,7 +44,6 @@ Click on Expired Warranties to view assets whose warranties have expired.
 
 Example
 Once you open the app, you will be greeted with the Welcome Page. From there, you can:
-
 - Click Enter Category to add a new category (e.g., "Electronics", "Furniture").
 - Click Enter Location to add a new location (e.g., "Office", "Warehouse").
 - Click Enter New Asset to add a new asset (e.g., "Laptop", "Chair").
